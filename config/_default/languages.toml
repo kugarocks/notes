@@ -1,0 +1,8 @@
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 10
+  [en.params]
+    languageISO = "EN-US"
+    languageTag = "en-US"
+    footer = 'Powered by <a class="text-muted" href="https://thulite.io/">Thulite</a>'
