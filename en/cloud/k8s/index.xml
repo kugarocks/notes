@@ -1,5 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on kugarocks</title><link>https://kugarocks.github.io/notes/en/cloud/k8s/</link><description>Recent content in Kubernetes on kugarocks</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Sun, 13 Oct 2024 17:00:00 +0800</lastBuildDate><atom:link href="https://kugarocks.github.io/notes/en/cloud/k8s/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://kugarocks.github.io/notes/en/cloud/k8s/intro/</link><pubDate>Sun, 13 Oct 2024 17:00:00 +0800</pubDate><guid>https://kugarocks.github.io/notes/en/cloud/k8s/intro/</guid><description>&lt;h2 id="why-k8s">WHY K8S&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on kugarocks</title><link>https://kugarocks.github.io/notes/en/cloud/k8s/</link><description>Recent content in Kubernetes on kugarocks</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2024 Thulite</copyright><lastBuildDate>Sun, 13 Oct 2024 22:00:00 +0800</lastBuildDate><atom:link href="https://kugarocks.github.io/notes/en/cloud/k8s/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://kugarocks.github.io/notes/en/cloud/k8s/intro/</link><pubDate>Sun, 13 Oct 2024 17:00:00 +0800</pubDate><guid>https://kugarocks.github.io/notes/en/cloud/k8s/intro/</guid><description>&lt;h2 id="why-k8s">WHY K8S&lt;/h2>
 &lt;p>In micro services, there are tons of container need to be host.
 We can&amp;rsquo;t do this by home make script and tools.
 So we need a container Orchestration tool.
-That is Kubernetes which offers the following features.&lt;/p></description></item></channel></rss>
+That is Kubernetes which offers the following features.&lt;/p></description></item><item><title>Architecture</title><link>https://kugarocks.github.io/notes/en/cloud/k8s/arch/</link><pubDate>Sun, 13 Oct 2024 22:00:00 +0800</pubDate><guid>https://kugarocks.github.io/notes/en/cloud/k8s/arch/</guid><description>&lt;h2 id="node-processes">Node Processes&lt;/h2>
+&lt;h3 id="worker-nodes">Worker Nodes&lt;/h3>
+&lt;ul>
+&lt;li>Each Node has multiple Pods on it.&lt;/li>
+&lt;li>Worker Nodes do the actual work.&lt;/li>
+&lt;li>3 processes must be installed on each Node:
+&lt;ul>
+&lt;li>Container Runtime (e.g. Docker/Podman)&lt;/li>
+&lt;li>kubelet&lt;/li>
+&lt;li>kube-proxy&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>
