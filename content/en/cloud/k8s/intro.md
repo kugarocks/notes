@@ -44,7 +44,7 @@ That is Kubernetes which offers the following features.
 
 * Smallest unit of K8S.
 * A layer of abstraction on containers.
-* Pod can have many container.
+* Pod can have many container(e.g. sidecar).
 * No need to interact with specific container tech. (e.g. docker)
 * Only interact with kubernetes layer.
 * Each pod gets its own IP address.
@@ -65,7 +65,7 @@ That is Kubernetes which offers the following features.
 
 ### Ingress
 
-* Receive external requests to internal services.
+* Route traffic into cluster(Internal Service).
 
 ### ConfigMap
 
