@@ -7,11 +7,66 @@ That is Kubernetes which offers the following features.&lt;/p></description></it
 &lt;ul>
 &lt;li>Each Node has multiple Pods on it.&lt;/li>
 &lt;li>Worker Nodes do the actual work.&lt;/li>
+&lt;li>Need more resources(CPU/Memory).&lt;/li>
 &lt;li>3 processes must be installed on each Node:
 &lt;ul>
-&lt;li>Container Runtime (e.g. Docker/Podman)&lt;/li>
-&lt;li>kubelet&lt;/li>
-&lt;li>kube-proxy&lt;/li>
+&lt;li>Container Runtime
+&lt;ul>
+&lt;li>e.g. Docker/Podman&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;li>kubelet
+&lt;ul>
+&lt;li>Communicate with Master Node.&lt;/li>
+&lt;li>Do the actual work&lt;/li>
+&lt;li>Scheduling Pods&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>kube-proxy
+&lt;ul>
+&lt;li>Network proxy/rules&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="master-node">Master Node&lt;/h3>
+&lt;ul>
+&lt;li>Cluster Interface.&lt;/li>
+&lt;li>Less resources than Worker Nodes.&lt;/li>
+&lt;li>4 processes must be installed on each Node:
+&lt;ul>
+&lt;li>Api Server
+&lt;ul>
+&lt;li>Cluster gateway&lt;/li>
+&lt;li>Gatekeeper for authentication&lt;/li>
+&lt;li>Client: UI/API/CLI&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Scheduler
+&lt;ul>
+&lt;li>Scheduling pods by resource availability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Controller Manager
+&lt;ul>
+&lt;li>Maintains the state of the cluster.&lt;/li>
+&lt;li>Detects and responds to node failure.&lt;/li>
+&lt;li>Request kubelet to restart failed Pods.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Etcd
+&lt;ul>
+&lt;li>Distributed key-value store.&lt;/li>
+&lt;li>Store the state of the cluster.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="kubectl">Kubectl&lt;/h2>
+&lt;ul>
+&lt;li>Command line tool for Kubernetes.&lt;/li>
+&lt;/ul>
+&lt;h3 id="get-version">Get Version&lt;/h3>
+&lt;p>kubectl client version and k8s server version.&lt;/p></description></item></channel></rss>
